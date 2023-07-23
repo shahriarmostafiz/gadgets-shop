@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind and daisyui cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- favicon  -->
+    <link
+      rel="shortcut icon"
+      href="./images/favicon (1).ico"
+      type="image/x-icon"
+    />
+    <!-- custon tailwind  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "banner-bg": "url('./images/vector art/WEB.jpg')",
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Phone-zh</title>
+  </head>
+  <body>
+    <header>
+      <!-- nav-bar section -->
+      <nav>
+        <div class="navbar bg-blue-950 py-4 md:px-12">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn bg-white mr-4 lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-cyan-900 rounded-box w-52 text-xl font-semibold text-white hover:text-teal-200"
+              >
+                <li><a>Laptops</a></li>
+                <li tabindex="0">
+                  <details>
+                    <summary>Phones</summary>
+                    <ul class="p-2 bg-cyan-900 text-white">
+                      <li><a>Android</a></li>
+                      <li><a>IPhone</a></li>
+                    </ul>
+                  </details>
+                </li>
+                <li><a>Ear-Buds</a></li>
+              </ul>
+            </div>
+            <a class="btn glass normal-case ml-10 text-xl text-white"
+              >GadgetzH</a
+            >
+          </div>
+
+          <div class="navbar-center hidden lg:flex">
+            <ul
+              class="menu menu-horizontal px-1 text-xl text-white font-semibold"
+            >
+              <li><a>Laptops</a></li>
+              <li tabindex="0">
+                <details>
+                  <summary>Phones</summary>
+                  <ul class="p-2 bg-blue-950 text-white">
+                    <li><a>Android</a></li>
+                    <li><a>IPhone</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li><a>Ear-Buds</a></li>
+            </ul>
+          </div>
+          <div class="form-control ml-12 lg:ml-72">
+            <input
+              type="text"
+              placeholder="Search"
+              class="input input-bordered hover:bg-violet-200 hover:placeholder:text-white hover:placeholder:font-bold w-36 md:w-96"
+            />
+          </div>
+        </div>
+      </nav>
+      <!-- banner section  -->
+      <section>
+        <div class="hero min-h-[calc(100vh-92px)] bg-banner-bg">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-3xl">
+              <h1 class="mb-5 text-5xl font-bold">Welcome to GadgetzH</h1>
+              <p class="mb-5 text-lg font-semibold">
+                Step into a world of innovation and discover the latest gadgets
+                that will revolutionize your life.Explore our curated collection
+                and experience the next level of gadgetry. Welcome to the world
+                of GadgetzH, where technology meets imagination!
+              </p>
+              <button class="btn glass text-white">Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- featured products section -->
+      <section class="max-w-screen-2xl px-5 mx-auto my-9 lg:my-20">
+        <div
+          class="text-teal-950 font-semibold text-center my-5 lg:my-10 space-y-4"
+        >
+          <h1 class="text-5xl">Featured products</h1>
+          <p>Handpicked finest gadgets</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- card 1  -->
+          <div
+            class="card w-96 mx-auto bg-base-100 shadow-gray-300 shadow-xl border-2"
+          >
+            <figure>
+              <img
+                src="/images/iphone_14_family_lineup_plus_pro_max.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body text-teal-950">
+              <h2 class="card-title">Iphone 14</h2>
+              <p class="text-gray-600 text-sm">
+                The iPhone 14 boasts an extraordinary blend of groundbreaking
+                features, including an advanced camera system, enhanced
+                performance, and a stunning design, redefining the smartphone
+                experience.
+              </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-glass">Read More</button>
+              </div>
+            </div>
+          </div>
+          <!-- card 2  -->
+          <div
+            class="card w-96 mx-auto bg-base-100 shadow-gray-300 shadow-xl border-2"
+          >
+            <figure>
+              <img src="/images/laptop.jpeg" alt="Shoes" />
+            </figure>
+            <div class="card-body text-teal-950">
+              <h2 class="card-title">Zephyrus G14</h2>
+              <p class="text-gray-600 text-sm">
+                The Zephyrus G14 stands as a powerful gaming laptop, combining
+                exceptional performance, portability, and an innovative AniMe
+                Matrix LED display, setting new standards for gaming enthusiasts
+                on the go.
+              </p>
+              <div class="card-actions justify-end">
+                <button class="btn glass">Read More</button>
+              </div>
+            </div>
+          </div>
+          <!-- card 3  -->
+          <div
+            class="card w-96 mx-auto bg-base-100 shadow-gray-300 shadow-xl border-2"
+          >
+            <figure>
+              <img src="/images/airbuds2.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body text-teal-950">
+              <h2 class="card-title">Airpods Pro 3</h2>
+              <p class="text-gray-600 text-sm">
+                AirPods Pro 3 deliver an immersive audio experience with active
+                noise cancellation, transparency mode, and a customizable fit,
+                making them the ultimate companion for music lovers and
+                on-the-go enthusiasts..
+              </p>
+              <div class="card-actions justify-end">
+                <button class="btn glass">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- gadets movement Sections  -->
+      <section
+        class="max-w-screen-2xl mx-auto my-9 lg:my-40 flex flex-col gap-12 md:gap-0 md:flex-row items-center lg:justify-between"
+      >
+        <div
+          class="text-teal-950 font-semibold my-5 lg:my-8 space-y-4 flex-1 ml-10"
+        >
+          <h1 class="text-6xl">Join the Movement</h1>
+          <p class="max-w-lg">
+            Embrace the gadget movement and unlock a world of boundless
+            possibilities, where innovation and technology converge to enhance
+            every aspect of your life.
+          </p>
+        </div>
+        <div class="flex justify-center">
+          <img
+            src="./images/phone-art1.jfif"
+            class="rounded-lg w-4/5 md:w-full"
+            alt=""
+          />
+        </div>
+      </section>
+      <!-- products list section  -->
+      <section class="max-w-screen-2xl px-5 mx-auto my-9 lg:my-20">
+        <div
+          class="text-teal-950 font-semibold text-center my-5 lg:my-10 space-y-4"
+        >
+          <h1 class="text-5xl">Featured products</h1>
+          <p>Handpicked finest gadgets</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+          <!-- item 1  -->
+          <div class="card bg-base-100 shadow-xl border-2">
+            <figure>
+              <img src="/images/apple-watch-series-7-press_1.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold">Smart Watches</h2>
+              <p>
+                Smartwatches are the perfect companions for the modern
+                individual. Stay effortlessly connected and organized on-the-go
+                with advanced features like fitness tracking, notifications, and
+                app integration
+              </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- item 2  -->
+          <div class="card bg-base-100 shadow-xl border-2">
+            <figure>
+              <img src="/images/banner-1.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold">Laptops</h2>
+              <p>
+                Unleash the power of cutting-edge technology with our
+                exceptional range of laptops. From sleek ultrabooks to powerful
+                gaming machines, our laptops are designed to cater to every need
+                and lifestyle.
+              </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- end of item -2  -->
+          <!-- item 3  -->
+          <div class="card bg-base-100 shadow-xl border-2">
+            <figure>
+              <img src="/images/phone-banner-1.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold">Smartphones</h2>
+              <p>
+                Discover the epitome of modern communication with our Smartphone
+                Collection. Featuring the latest advancements in technology, our
+                smartphones empower you to stay connected, productive, and
+                entertained throughout your day.
+              </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- item 4  -->
+          <div class="card bg-base-100 shadow-xl border-2">
+            <figure>
+              <img src="/images/earbuds-1.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold">Earbuds</h2>
+              <p>
+                Elevate your audio experience with the latest in wireless
+                technology.Designed for comfort and reliability, these earbuds
+                fit snugly, providing hours of uninterrupted listening pleasure.
+              </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer p-10 bg-base-200 text-base-content">
+      <div class="lg:ml-32">
+        <span class="footer-title">Services</span>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </div>
+      <div>
+        <span class="footer-title">Company</span>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </div>
+      <div>
+        <span class="footer-title">Legal</span>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </div>
+      <div>
+        <span class="footer-title">Newsletter</span>
+        <div class="form-control w-80">
+          <label class="label">
+            <span class="label-text">Enter your email address</span>
+          </label>
+          <div class="relative">
+            <input
+              type="text"
+              placeholder="username@site.com"
+              class="input input-bordered w-full pr-16"
+            />
+            <button
+              class="btn bg-purple-950 text-white absolute top-0 right-0 rounded-l-none"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
